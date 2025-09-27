@@ -1,60 +1,80 @@
-School Timetable Interface
+# ⏰ Mind Map – Innovative Timepiece Project
+```
+Innovative Timepiece
 │
-├── People
-│   ├── Students (10–22 tuổi)
-│   │   ├── Needs: xem lịch học, đổi tiết, nhắc nhở
-│   │   └── Skills: digital native, quen mobile app
-│   ├── Teachers
-│   │   ├── Needs: quản lý tiết dạy, lịch thay đổi
-│   │   └── Skills: trung bình - khá (mobile/web)
-│   └── Admin (School staff)
-│       ├── Needs: tạo/sửa thời khóa biểu, phân bổ phòng
-│       └── Skills: sử dụng PC, quản lý hệ thống
+├── a) Product & Users
+│ ├── Functions
+│ │ ├── Hiển thị giờ & ngày
+│ │ ├── Nhắc nhở (reminders)
+│ │ ├── Ghi lại thói quen vận động
+│ │ ├── Phản hồi giọng nói
+│ │ └── Thiết kế nghệ thuật (sculpture/clock/watch)
+│ │
+│ ├── Potential Users (5)
+│ │ ├── Student → muốn báo thức, nhắc giờ học
+│ │ ├── Office worker → cần lịch hẹn, nhắc meeting
+│ │ ├── Athlete → theo dõi vận động, tập luyện
+│ │ ├── Elderly → cần giao diện đơn giản, báo giờ bằng giọng nói
+│ │ └── Designer → quan tâm tính thẩm mỹ, sáng tạo
+│ │
+│ ├── Requirements
+│ │ ├── Luôn hiển thị giờ rõ ràng (analog/digital)
+│ │ ├── Dễ dùng, dễ đọc
+│ │ ├── Tùy chỉnh thông báo
+│ │ ├── Tích hợp cảm biến (nếu wearable)
+│ │ └── Thiết kế phù hợp ngữ cảnh sử dụng
+│ │
+│ ├── Usability Criteria
+│ │ ├── Hiệu quả (Efficiency) → thao tác nhanh, dễ chỉnh
+│ │ ├── Hiểu được (Learnability) → người dùng mới dễ tiếp cận
+│ │ ├── Ghi nhớ (Memorability) → dùng lại không quên cách
+│ │ ├── Ít lỗi (Errors) → tránh nhập nhầm, khó đọc
+│ │ └── Thỏa mãn (Satisfaction) → trải nghiệm thú vị, thoải mái
+│ │
+│ └── UX Criteria
+│ ├── Thẩm mỹ (Aesthetic) → thiết kế bắt mắt
+│ ├── Gây cảm xúc (Emotional impact)
+│ ├── Tính cá nhân hóa (Personalization)
+│ └── Khả năng hòa nhập (Accessibility cho mọi lứa tuổi)
 │
-├── Activities
-│   ├── Students
-│   │   ├── Xem lịch theo ngày/tuần/tháng
-│   │   ├── Nhận thông báo thay đổi lịch
-│   │   └── Tìm kiếm môn/giáo viên
-│   ├── Teachers
-│   │   ├── Kiểm tra lịch dạy
-│   │   ├── Nhận thông báo thay đổi tiết
-│   │   └── Quản lý lớp được phân công
-│   └── Admin
-│       ├── Tạo thời khóa biểu
-│       ├── Phân bổ phòng, giáo viên
-│       └── Xuất báo cáo
+├── b) Inspiration & Research
+│ ├── Smartwatches (Apple Watch, Garmin, Fitbit)
+│ │ └── Điểm mạnh: đa chức năng, đo sức khỏe
+│ │ └── Điểm yếu: màn hình nhỏ, phụ thuộc pin
+│ ├── Digital clocks
+│ │ └── Điểm mạnh: dễ đọc, rẻ
+│ │ └── Điểm yếu: ít sáng tạo, không đa tính năng
+│ ├── Analog artistic clocks
+│ │ └── Điểm mạnh: thẩm mỹ, trang trí
+│ │ └── Điểm yếu: ít chức năng thông minh
+│ └── Điêu khắc/đèn nghệ thuật (inspiration từ art installation)
+│ └── Tạo ra cách hiển thị giờ độc đáo (ánh sáng, chuyển động)
 │
-├── Contexts
-│   ├── Mobile app (students dùng nhiều)
-│   ├── Web app (admin, teacher)
-│   ├── Online (sync real-time)
-│   └── Offline (cache lịch học gần nhất)
+├── c) Sketch Designs (2 alternatives)
+│ ├── Design A – Smart Sculpture Clock
+│ │ ├── Hình điêu khắc nghệ thuật, tích hợp đèn LED hiển thị giờ
+│ │ ├── Có thể đổi màu để báo nhắc nhở
+│ │ └── Phù hợp đặt ở phòng khách, ban công
+│ │
+│ └── Design B – Next-gen Smartwatch
+│ ├── Màn hình lai (analog kim + digital số)
+│ ├── Cảm biến sức khỏe, GPS
+│ ├── Báo thức rung & nhắc bằng giọng nói
+│ └── Có thể cá nhân hóa giao diện
 │
-├── Technologies
-│   ├── Web app (React/Angular/NestJS backend)
-│   ├── Mobile (Flutter/React Native)
-│   ├── Notifications (push/email/SMS)
-│   └── Database (PostgreSQL/Firebase)
+└── d) Evaluation
+├── Theo Usability Criteria
+│ ├── Design A: dễ nhìn, đẹp, nhưng khó mang theo
+│ └── Design B: tiện lợi, nhiều chức năng, nhưng màn hình nhỏ
 │
-└── Research (3 similar apps)
-    ├── 1. Google Calendar
-    │   ├── Data: events, tasks, reminders
-    │   ├── Display: timeline, calendar views, color-coded
-    │   ├── Interaction: tap, drag & drop, search, filter
-    │   ├── Strengths: trực quan, realtime sync
-    │   └── Weaknesses: không tối ưu riêng cho trường học
-    │
-    ├── 2. MyStudyLife
-    │   ├── Data: class schedule, exams, assignments
-    │   ├── Display: timetable view, task list, notifications
-    │   ├── Interaction: scroll, filter by subject, reminders
-    │   ├── Strengths: thiết kế riêng cho học sinh/sinh viên
-    │   └── Weaknesses: UI hơi cũ, chưa trực quan như dashboard hiện đại
-    │
-    └── 3. Class Timetable (Mobile app)
-        ├── Data: courses, teachers, room, time slots
-        ├── Display: weekly grid, color-coded subjects
-        ├── Interaction: swipe, tap-to-edit, minimal setup
-        ├── Strengths: đơn giản, nhẹ, dễ dùng
-        └── Weaknesses: thiếu tính năng quản trị (admin/teacher)
+├── Theo UX Criteria
+│ ├── Design A: mạnh về aesthetic & emotional impact
+│ └── Design B: mạnh về personalization & efficiency
+│
+└── User Feedback
+├── Student: thích B (mobile, reminders)
+├── Office worker: thích B (meeting alerts)
+├── Athlete: thích B (tracking)
+├── Elderly: thích A (đơn giản, dễ nhìn, giọng nói)
+└── Designer: thích A (thẩm mỹ độc đáo)
+```
